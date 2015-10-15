@@ -17,7 +17,11 @@ TARGET_KERNEL_CONFIG := aosp_kitakami_suzuran_defconfig
 DEVICE_PACKAGE_OVERLAYS += \
     device/sony/suzuran/overlay
 
+# Use zygote64_32
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.zygote=zygote64_32
+
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony.mk)
 $(call inherit-product, device/sony/kitakami/device.mk)
 $(call inherit-product, vendor/sony/suzuran/suzuran-vendor.mk)
