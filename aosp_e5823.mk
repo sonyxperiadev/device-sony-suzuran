@@ -40,6 +40,10 @@ PRODUCT_COPY_FILES += \
     device/sony/suzuran/rootdir/system/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
     device/sony/suzuran/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml
 
+# NFC config
+PRODUCT_PACKAGES += nfc_nci.suzuran
+ADDITIONAL_DEFAULT_PROPERTIES += ro.hardware.nfc_nci=suzuran
+
 PRODUCT_NAME := aosp_e5823
 PRODUCT_DEVICE := suzuran
 PRODUCT_MODEL := Xperia Z5 Compact (AOSP)
