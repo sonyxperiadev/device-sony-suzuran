@@ -13,6 +13,7 @@
 # limitations under the License.
 
 include device/sony/kitakami/BoardConfig.mk
+include device/sony/common/CommonConfig.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := E5823
 
