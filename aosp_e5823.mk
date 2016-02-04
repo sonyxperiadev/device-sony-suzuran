@@ -38,6 +38,20 @@ PRODUCT_COPY_FILES += \
     device/sony/suzuran/rootdir/system/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
     device/sony/suzuran/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml
 
+# Device Init
+PRODUCT_PACKAGES += \
+    init.recovery.suzuran \
+    init.suzuran \
+    ueventd.suzuran
+
+# Lights
+PRODUCT_PACKAGES += \
+    lights.suzuran
+
+# Simple PowerHAL
+PRODUCT_PACKAGES += \
+    power.suzuran
+
 PRODUCT_NAME := aosp_e5823
 PRODUCT_DEVICE := suzuran
 PRODUCT_MODEL := Xperia Z5 Compact (AOSP)
