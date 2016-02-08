@@ -47,6 +47,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.suzuran
 
+# NFC config
+PRODUCT_PACKAGES += \
+    nfc_nci.pn54x.default
+
 PRODUCT_NAME := aosp_e5823
 PRODUCT_DEVICE := suzuran
 PRODUCT_MODEL := Xperia Z5 Compact (AOSP)
