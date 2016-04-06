@@ -17,7 +17,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_COPY_FILES := \
     device/sony/suzuran/rootdir/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
-    device/sony/suzuran/rootdir/system/etc/BCM4356.hcd:system/etc/firmware/BCM43xx.hcd \
+    device/sony/suzuran/rootdir/system/etc/BCM43455.hcd:system/etc/firmware/BCM43xx.hcd \
     device/sony/suzuran/rootdir/system/etc/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal \
     device/sony/suzuran/rootdir/system/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
     device/sony/suzuran/rootdir/system/etc/thermanager.xml:system/etc/thermanager.xml \
