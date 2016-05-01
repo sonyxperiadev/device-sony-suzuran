@@ -60,28 +60,11 @@
 		</resource>
 
 		<!-- generic cpufreq -->
-		<resource name="cpu0" type="sysfs">/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq</resource>
-		<resource name="cpu1" type="sysfs">/sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq</resource>
-		<resource name="cpu2" type="sysfs">/sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq</resource>
-		<resource name="cpu3" type="sysfs">/sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq</resource>
-		<resource name="cpu4" type="sysfs">/sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq</resource>
-		<resource name="cpu5" type="sysfs">/sys/devices/system/cpu/cpu5/cpufreq/scaling_max_freq</resource>
-		<resource name="cpu6" type="sysfs">/sys/devices/system/cpu/cpu6/cpufreq/scaling_max_freq</resource>
-		<resource name="cpu7" type="sysfs">/sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq</resource>
+		<resource name="cluster-a53" type="sysfs">/sys/module/msm_performance/parameters/cpu_max_freq</resource>
+		<resource name="cluster-a57" type="sysfs">/sys/module/msm_performance/parameters/cpu_max_freq</resource>
 
-		<resource name="cluster-a53" type="union">
-			<resource name="cpu0" />
-			<resource name="cpu1" />
-			<resource name="cpu2" />
-			<resource name="cpu3" />
-		</resource>
-
-		<resource name="cluster-a57" type="union">
-			<resource name="cpu4" />
-			<resource name="cpu5" />
-			<resource name="cpu6" />
-			<resource name="cpu7" />
-		</resource>
+		<!-- hotplugging -->
+		<resource name="thermal-max-cpus" type="sysfs">/sys/module/msm_performance/parameters/max_cpus</resource>
 
 		<!-- device-specific -->
 		<resource name="kgsl-3d0" type="sysfs">/sys/class/kgsl/kgsl-3d0/max_gpuclk</resource>
@@ -155,36 +138,44 @@
 	</control>
 
 	<control name="cpu-a53">
-		<mitigation level="off"><value resource="cluster-a53">1555200</value></mitigation>
-		<mitigation level="1"><value resource="cluster-a53">1478400</value></mitigation>
-		<mitigation level="2"><value resource="cluster-a53">1344000</value></mitigation>
-		<mitigation level="3"><value resource="cluster-a53">1248000</value></mitigation>
-		<mitigation level="4"><value resource="cluster-a53">960000</value></mitigation>
-		<mitigation level="5"><value resource="cluster-a53">864000</value></mitigation>
-		<mitigation level="6"><value resource="cluster-a53">768000</value></mitigation>
-		<mitigation level="7"><value resource="cluster-a53">672000</value></mitigation>
-		<mitigation level="8"><value resource="cluster-a53">600000</value></mitigation>
-		<mitigation level="9"><value resource="cluster-a53">460800</value></mitigation>
-		<mitigation level="10"><value resource="cluster-a53">384000</value></mitigation>
+		<mitigation level="off"><value resource="cluster-a53">0:4294967295</value></mitigation>
+		<mitigation level="1"><value resource="cluster-a53">0:1478400</value></mitigation>
+		<mitigation level="2"><value resource="cluster-a53">0:1344000</value></mitigation>
+		<mitigation level="3"><value resource="cluster-a53">0:1248000</value></mitigation>
+		<mitigation level="4"><value resource="cluster-a53">0:960000</value></mitigation>
+		<mitigation level="5"><value resource="cluster-a53">0:864000</value></mitigation>
+		<mitigation level="6"><value resource="cluster-a53">0:768000</value></mitigation>
+		<mitigation level="7"><value resource="cluster-a53">0:672000</value></mitigation>
+		<mitigation level="8"><value resource="cluster-a53">0:600000</value></mitigation>
+		<mitigation level="9"><value resource="cluster-a53">0:460800</value></mitigation>
+		<mitigation level="10"><value resource="cluster-a53">0:384000</value></mitigation>
 		<mitigation level="11"><value resource="shutdown" /></mitigation>
 	</control>
 
 	<control name="cpu-a57">
-		<mitigation level="off"><value resource="cluster-a57">1958400</value></mitigation>
-		<mitigation level="1"><value resource="cluster-a57">1824000</value></mitigation>
-		<mitigation level="2"><value resource="cluster-a57">1728000</value></mitigation>
-		<mitigation level="3"><value resource="cluster-a57">1632000</value></mitigation>
-		<mitigation level="4"><value resource="cluster-a57">1536000</value></mitigation>
-		<mitigation level="5"><value resource="cluster-a57">1440000</value></mitigation>
-		<mitigation level="6"><value resource="cluster-a57">1344000</value></mitigation>
-		<mitigation level="7"><value resource="cluster-a57">1248000</value></mitigation>
-		<mitigation level="8"><value resource="cluster-a57">960000</value></mitigation>
-		<mitigation level="9"><value resource="cluster-a57">864000</value></mitigation>
-		<mitigation level="10"><value resource="cluster-a57">768000</value></mitigation>
-		<mitigation level="11"><value resource="cluster-a57">633600</value></mitigation>
-		<mitigation level="12"><value resource="cluster-a57">480000</value></mitigation>
-		<mitigation level="13"><value resource="cluster-a57">384000</value></mitigation>
+		<mitigation level="off"><value resource="cluster-a57">4:4294967295</value></mitigation>
+		<mitigation level="1"><value resource="cluster-a57">4:1824000</value></mitigation>
+		<mitigation level="2"><value resource="cluster-a57">4:1728000</value></mitigation>
+		<mitigation level="3"><value resource="cluster-a57">4:1632000</value></mitigation>
+		<mitigation level="4"><value resource="cluster-a57">4:1536000</value></mitigation>
+		<mitigation level="5"><value resource="cluster-a57">4:1440000</value></mitigation>
+		<mitigation level="6"><value resource="cluster-a57">4:1344000</value></mitigation>
+		<mitigation level="7"><value resource="cluster-a57">4:1248000</value></mitigation>
+		<mitigation level="8"><value resource="cluster-a57">4:960000</value></mitigation>
+		<mitigation level="9"><value resource="cluster-a57">4:864000</value></mitigation>
+		<mitigation level="10"><value resource="cluster-a57">4:768000</value></mitigation>
+		<mitigation level="11"><value resource="cluster-a57">4:633600</value></mitigation>
+		<mitigation level="12"><value resource="cluster-a57">4:480000</value></mitigation>
+		<mitigation level="13"><value resource="cluster-a57">4:384000</value></mitigation>
 		<mitigation level="14"><value resource="shutdown" /></mitigation>
+	</control>
+
+	<control name="hotplug-a57">
+		<mitigation level="off"><value resource="thermal-max-cpus">-1:-1</value></mitigation>
+		<mitigation level="1"><value resource="thermal-max-cpus">4:3</value></mitigation>
+		<mitigation level="2"><value resource="thermal-max-cpus">4:2</value></mitigation>
+		<mitigation level="3"><value resource="thermal-max-cpus">4:1</value></mitigation>
+		<mitigation level="4"><value resource="thermal-max-cpus">4:0</value></mitigation>
 	</control>
 
 	<!-- burn-out protection -->
@@ -332,6 +323,21 @@
 		</threshold>
 		<threshold trigger="45000" clear="44200">
 			<mitigation name="cpu-a57" level="13" />
+		</threshold>
+	</configuration>
+
+	<configuration sensor="pm8994_tz">
+		<threshold>
+			<mitigation name="hotplug-a57" level="off" />
+		</threshold>
+		<threshold trigger="39000" clear="36000">
+			<mitigation name="hotplug-a57" level="2" />
+		</threshold>
+		<threshold trigger="44200" clear="42000">
+			<mitigation name="hotplug-a57" level="3" />
+		</threshold>
+		<threshold trigger="45000" clear="44200">
+			<mitigation name="hotplug-a57" level="4" />
 		</threshold>
 	</configuration>
 
