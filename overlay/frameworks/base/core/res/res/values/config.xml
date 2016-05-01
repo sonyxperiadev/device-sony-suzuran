@@ -32,17 +32,21 @@
 
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
+        <item>16</item>
         <item>64</item>
-        <item>128</item>
-        <item>170</item>
-        <item>220</item>
+        <item>144</item>
         <item>256</item>
-        <item>384</item>
-        <item>512</item>
-        <item>768</item>
+        <item>400</item>
+        <item>576</item>
+        <item>784</item>
         <item>1024</item>
-        <item>1536</item>
-        <item>2048</item>
+        <item>1296</item>
+        <item>1600</item>
+        <item>1936</item>
+        <item>2304</item>
+        <item>2704</item>
+        <item>3136</item>
+        <item>3600</item>
         <item>4096</item>
     </integer-array>
 
@@ -52,17 +56,21 @@
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
         <item>10</item>   <!--    0 -->
+        <item>16</item>   <!--   16 -->
         <item>32</item>   <!--   64 -->
-        <item>64</item>   <!--  128 -->
-        <item>80</item>   <!--  170 -->
-        <item>96</item>   <!--  220 -->
-        <item>112</item>  <!--  256 -->
-        <item>128</item>  <!--  384 -->
-        <item>144</item>  <!--  512 -->
-        <item>176</item>  <!--  768 -->
-        <item>196</item>  <!-- 1024 -->
-        <item>208</item>  <!-- 1536 -->
-        <item>224</item>  <!-- 2048 -->
+        <item>48</item>   <!--  144 -->
+        <item>64</item>   <!--  256 -->
+        <item>80</item>   <!--  400 -->
+        <item>96</item>   <!--  576 -->
+        <item>112</item>  <!--  784 -->
+        <item>128</item>  <!-- 1024 -->
+        <item>144</item>  <!-- 1296 -->
+        <item>160</item>  <!-- 1600 -->
+        <item>176</item>  <!-- 1936 -->
+        <item>192</item>  <!-- 2304 -->
+        <item>208</item>  <!-- 2704 -->
+        <item>224</item>  <!-- 3136 -->
+        <item>240</item>  <!-- 3600 -->
         <item>255</item>  <!-- 4096 -->
     </integer-array>
 
