@@ -51,8 +51,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     nfc_nci.suzuran
 
-# SimToolKit
+# Telephony Packages (AOSP)
 PRODUCT_PACKAGES += \
+    InCallUI \
     Stk
 
 PRODUCT_AAPT_CONFIG := normal
