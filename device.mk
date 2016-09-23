@@ -61,6 +61,10 @@ PRODUCT_PACKAGES += \
     InCallUI \
     Stk
 
+## 8MP Switch for ES
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.camera.8mp.config=true
+
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREBUILT_DPI := xhdpi hdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
