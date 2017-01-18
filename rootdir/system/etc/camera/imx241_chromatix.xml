@@ -1,0 +1,30 @@
+<ChromatixConfigurationRoot>
+  <CommonChromatixInfo>
+    <ChromatixName>
+      <ISPCommon>imx241_common</ISPCommon>
+      <PostProc>imx241_postproc</PostProc>
+      <CPPPreview>imx241_cpp_preview</CPPPreview>
+      <CPPSnapshot>imx241_cpp_snapshot</CPPSnapshot>
+      <CPPLiveshot>imx241_cpp_liveshot</CPPLiveshot>
+    </ChromatixName>
+  </CommonChromatixInfo>
+  <ResolutionChromatixInfo>
+    <ChromatixName sensor_resolution_index="0">
+      <ISPPreview>imx241_snapshot</ISPPreview>
+      <ISPSnapshot>imx241_snapshot</ISPSnapshot>
+      <ISPVideo>imx241_video</ISPVideo>
+      <CPPVideo>imx241_cpp_video</CPPVideo>
+      <A3Preview>imx241_zsl_preview</A3Preview>
+      <A3Video>imx241_zsl_video</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="1">
+      <ISPPreview>imx241_preview</ISPPreview>
+      <ISPSnapshot>imx241_preview</ISPSnapshot>
+      <ISPVideo>imx241_video</ISPVideo>
+      <CPPVideo>imx241_cpp_video</CPPVideo>
+      <PostProc>imx241_postproc</PostProc>
+      <A3Preview>imx241_default_preview</A3Preview>
+      <A3Video>imx241_default_video</A3Video>
+    </ChromatixName>
+  </ResolutionChromatixInfo>
+</ChromatixConfigurationRoot>

@@ -1,0 +1,32 @@
+<ChromatixConfigurationRoot>
+  <CommonChromatixInfo>
+    <ChromatixName>
+      <ISPCommon>imx300_common</ISPCommon>
+      <PostProc>imx300_postproc</PostProc>
+    </ChromatixName>
+  </CommonChromatixInfo>
+  <ResolutionChromatixInfo>
+    <ChromatixName sensor_resolution_index="0">
+      <ISPPreview>imx300_snapshot</ISPPreview>
+      <ISPSnapshot>imx300_snapshot</ISPSnapshot>
+      <ISPVideo>imx300_snapshot</ISPVideo>
+      <CPPPreview>imx300_cpp_preview</CPPPreview>
+      <CPPSnapshot>imx300_cpp_snapshot</CPPSnapshot>
+      <CPPVideo>imx300_cpp_video</CPPVideo>
+      <CPPLiveshot>imx300_cpp_liveshot</CPPLiveshot>
+      <A3Preview>imx300_default_preview_bu64747gwz</A3Preview>
+      <A3Video>imx300_default_video_bu64747gwz</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="1">
+      <ISPPreview>imx300_preview</ISPPreview>
+      <ISPSnapshot>imx300_preview</ISPSnapshot>
+      <ISPVideo>imx300_preview</ISPVideo>
+      <CPPPreview>imx300_cpp_preview</CPPPreview>
+      <CPPSnapshot>imx300_cpp_snapshot</CPPSnapshot>
+      <CPPVideo>imx300_cpp_video</CPPVideo>
+      <CPPLiveshot>imx300_cpp_liveshot</CPPLiveshot>
+      <A3Preview>imx300_default_preview_bu64747gwz</A3Preview>
+      <A3Video>imx300_default_video_bu64747gwz</A3Video>
+    </ChromatixName>
+  </ResolutionChromatixInfo>
+</ChromatixConfigurationRoot>
