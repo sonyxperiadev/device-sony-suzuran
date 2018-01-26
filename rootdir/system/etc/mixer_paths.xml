@@ -2566,13 +2566,7 @@
     </path>
 
     <path name="speaker-dmic-endfire">
-        <ctl name="AIF1_CAP Mixer SLIM TX7" value="1" />
-        <ctl name="AIF1_CAP Mixer SLIM TX8" value="1" />
-        <ctl name="SLIM TX7 MUX" value="DEC10" />
-        <ctl name="DEC10 MUX" value="DMIC3" />
-        <ctl name="SLIM TX8 MUX" value="DEC9" />
-        <ctl name="DEC9 MUX" value="DMIC4" />
-        <ctl name="SLIM_0_TX Channels" value="Two" />
+        <path name="voip-speaker-mic" />
     </path>
 
     <path name="dmic-endfire">
